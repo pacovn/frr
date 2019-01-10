@@ -1084,3 +1084,7 @@ void _libfrr_version(void)
 	write(1, banner, sizeof(banner) - 1);
 	_exit(0);
 }
+
+FRR_MODULE_SETUP(.name = "libfrr", .version = "0.0.0",
+		 .description = "FRR library.",
+		 .init = NULL)
